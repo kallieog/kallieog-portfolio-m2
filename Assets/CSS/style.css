@@ -1,0 +1,56 @@
+body 
+header {
+    display: flex;
+    justify-content:space-between;
+    background-color: gray;
+    color: white;
+    flex-direction: row;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 40px;
+    }
+
+header li {
+    margin-right: 20px;
+   
+}
+
+header ul {
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+
+.section {
+    display: flex;
+
+
+}
+.title {
+    font-size: 40px;
+    margin-left: 40px;
+    padding-right: 15px;
+    text-align: end;
+
+
+}
+
+.content {
+    border-left: rgb(29, 29, 141) solid ;
+    padding-left: 5px;
+}
+
+#work {
+    margin-top: 100px;
+
+}
+img {
+    height: 750px;
+    width: 1000px
+    
+}
