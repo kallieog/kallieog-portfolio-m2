@@ -1,7 +1,6 @@
-body 
-header {
+body header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: gray;
     color: white;
     flex-direction: row;
@@ -10,11 +9,32 @@ header {
 header h1 {
     margin-left: 20px;
     font-size: 40px;
-    }
+}
 
 header li {
     margin-right: 20px;
-   
+
+}
+
+
+
+a:hover {
+    box-shadow: inset 0 -100px 0 0 teal;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    border-bottom: solid 2px teal;
+    box-shadow: inset 0 0 0 0 teal;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    color: teal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 header ul {
@@ -23,34 +43,119 @@ header ul {
     list-style: none;
     margin-top: 30px;
     font-size: 20px;
-    
+
+}
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+
+}
+.hero-text{
+    position: absolute;
+    top: 210px;
+    right: 8px;
+    border: 2px solid rgb(38, 193, 193);
+    background-color: rgb(38, 193, 193);
+}
+header{
+    padding: 0px;
+    margin:0px;
+}
+.hero-container {
+    height: 200px;
+    background-image: url("../../hero-flowers.jpg");
+    background-size: cover;
+
 }
 
 .section {
     display: flex;
-
-
 }
+
+
 .title {
     font-size: 40px;
-    margin-left: 40px;
-    padding-right: 15px;
+    flex-basis: 25%;
+    flex-wrap: wrap;
     text-align: end;
-
-
+    padding-right: 15px;
 }
 
 .content {
-    border-left: rgb(29, 29, 141) solid ;
+    border-left: rgb(29, 29, 141) solid;
     padding-left: 5px;
+    flex-basis: 65%;
 }
 
-#work {
-    margin-top: 100px;
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
 
 }
-img {
-    height: 750px;
-    width: 1000px
-    
+
+.img {
+    height: 250px;
+    width: 100%;
+    border: 4px solid rgb(38, 193, 193)
+}
+
+.text-box {
+    position: absolute;
+    bottom: 6%;
+    left: 0%;
+    border: 2px solid rgb(38, 193, 193);
+    background-color: rgb(38, 193, 193);
+
+}
+
+.img2 {
+    height: 250px;
+    width: 100%;
+    border: 4px solid rgb(38, 193, 193);
+    height: 125px;
+    margin-top: 15px;
+
+}
+
+.bottom-ul {
+    border-left: rgb(29, 29, 141) solid;
+    padding-left: 5px;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.bottom-ul ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+
+}
+
+.small-image {
+    width: 45%;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-text-box {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    border: 2px solid rgb(38, 193, 193);
+    background-color: rgb(38, 193, 193);
+}
+
+.scale-title {
+    font-size: 50%;
+}
+
+.scale-text {
+    font-size: 50%;
 }
